@@ -1,8 +1,10 @@
+Color palette #D79922  #EFE2BA #F13C20 #4056A1 #C5CBE3
 /* Global Edits */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 html {
     font-size: 62.5%;   
@@ -11,28 +13,31 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 h1  {
-    font-size: 2.6rem;
+    font-size: 5rem;
 }
+
 li, button, label, input, p {
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 h2 {
     font-size: 4rem;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: lighter;
 }
 h4, h5 {
-    font-size: 1rem;
+    font-size: 2rem;
 }
+
 a {
-    color: white;
+    color: #050404;
     text-decoration: none;
 }
-button {
+
+.cta {
     padding: 2rem 6rem;
-    background: #4c6c97;
+    background: #F13C20;
     border: none;
     color: white;
     font-size: 1.8rem;
@@ -40,13 +45,14 @@ button {
     transition: background 1s ease-in-out;
 }
 
-button:hover {
-    background: #27394e
+.cta:hover {
+    background: #FFED4B;
+    color: #050404 ;
 }
 
 .main-head {
     height: 10vh;
-    background-color: red;
+    background: #EFE2BA;
 }
 
 nav {
@@ -56,6 +62,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -68,11 +75,36 @@ nav ul {
 
 #logo {
     flex: 2 1 40rem;
-    
+    font-family: 'Monoton', cursive;
+    letter-spacing: 2rem;
 }
 
 
 .hero {
-    background-color: #EFE2BA;
+    background: linear-gradient(110deg, #EFE2BA  88%, #FFED4B 88%);
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.descbutton {
+    padding: 4rem;
+}
+
+.about {
+    height: 100vh;
+    width: 100vh;
+    position: relative;
+}
+.box1 {
+    height: 50rem;
+    width: 50rem;
+    background-color: black;
+    position:absolute;
+    left: 50%;
+    bottom: 0px;
 }
