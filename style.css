@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Makes rem = 10px */
@@ -36,6 +37,7 @@ h4, h5 {
 a {
     color: #050404;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 /* First Page */
@@ -124,10 +126,10 @@ nav ul {
     padding: 4rem;
 }
 
-.box {
+.hero-box {
     height: 45%;
     width: 25%;
-    background-color: black;
+    background-color: #050404;
     position: absolute;
     left: 3%;
     bottom: 30%;
@@ -136,21 +138,53 @@ nav ul {
     display: flex;
     border-radius: 5%;
 }
-
 /* Second Page */
 
-.about {
+#about {
     height: 100vh;
     width: 100vh;
-    position: relative;
+    position: absolute;
+    background-color: #C5CBE3;
 }
 
 
-.box1 {
-    height: 50rem;
-    width: 50rem;
-    background-color: black;
-    position:absolute;
-    left: 50%;
-    bottom: 0px;
+.about-box {
+    height: 80vh;
+    width: 70vh;
+    background-color: #4056A1;
+    position:relative;
+    left: 95%;
+    top: 10%;
+    text-transform: uppercase;
+}
+
+.about-box h2 {
+    position:relative;
+    font: #050404;
+    right: 130%;
+    letter-spacing: 2rem;
+}
+
+.about-box h3 {
+    padding: 2rem 0 5rem 0;
+    font: #050404;
+
+}
+.about-box p {
+    padding: 2rem;
+    justify-content: left;
+    text-align: left;
+}
+
+.testphoto {
+    height: 45%;
+    width: 45%;
+    position: relative;
+    right: 95%;
+    bottom: 40%;
+}
+/* Third Section - Portfolio */
+
+#portfolio {
+    
 }
