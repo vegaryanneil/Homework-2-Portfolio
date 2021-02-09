@@ -1,6 +1,5 @@
 /* Color palette #D79922  #EFE2BA #F13C20 #4056A1 #C5CBE3 */
-
-/* Global Edits */
+    /* Global Edits */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +9,7 @@
 
 /* Makes rem = 10px */
 html {
-    font-size: 62.5%;   
+    font-size: 62.5%;
 }
 
 body {
@@ -35,7 +34,7 @@ h4, h5 {
     font-size: 2rem;
 }
 a {
-    color: #050404;
+    color: #000000;
     text-decoration: none;
     scroll-behavior: smooth;
 }
@@ -74,7 +73,7 @@ nav ul {
 /* End of Navigation Bar */
 
 .hero {
-    background: linear-gradient(110deg, #EFE2BA  88%, #FFED4B 88%);
+    background: linear-gradient(110deg, #EFE2BA  88%, #D79922 88%);
     height: 90vh;
     display: flex;
     flex-direction: column;
@@ -132,9 +131,8 @@ nav ul {
     height: 100vh;
     width: 100%;
     display: flex;
-    position: absolute;
-    background-color: #C5CBE3;
-    background: linear-gradient(90deg, #C5CBE3 70%, #fffefe 30%);
+    position: relative;
+    background: linear-gradient(90deg, #405681 70%, #fffefe 30%);
 }
 
 .about-box {
@@ -142,7 +140,6 @@ nav ul {
     position: relative;
     width: 70vh;
     text-transform: uppercase;
-    border: solid #4056A1;
     background-color: white;
     left: 50%;
     top: 10%;
@@ -151,12 +148,11 @@ nav ul {
 
 .about-box h2 {
     position:relative;
-    font: #050404;
-    letter-spacing: 1rem;
+    color: #fffeff;
     white-space: nowrap;
     right: 125%;
+    font-weight: 700; 
 }
-
 .about-box h3 {
     padding: 2rem 0 5rem 0;
     font: #050404;
@@ -164,37 +160,97 @@ nav ul {
     position: relative;
     bottom: 5.9rem;
     font-size: 4rem;
-
+    font-weight: 700;
 }
+
 .about-box p {
     padding: 2rem;
     justify-content: left;
     text-align: left;
+    position: relative;
+    top: 25%;
 }
 
 .profile-pic {
-    height: 50%;
-    width: 60%;
+    height: 30%;
+    width: 30%;
     position: absolute;
-    right: 150%;
-    bottom: 25%;
+    bottom: 60%;
+    left: 30%;
 }
 
-/* Third Section - Portfolio */
-/* .hero-box {
-    height: 45%;
-    width: 25%;
-    background-color: #050404;
-    position: absolute;
-    left: 3%;
-    bottom: 30%;
-    content: url(images/profile-pic-beige-background.png);
-    background-position: center 60%;
+/* Portfolio Page */
+
+#portfolio {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #fffefe 70%, #F13C20 30%);
+}
+
+#contact {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, #D79922 70%, #fffeff 30%);
     display: flex;
-    border-radius: 2%; */
+    flex-wrap: wrap;
+}
 
+  .form-wrapper {
+    flex: 3 1 40rem;
+  }
+  .form-wrapper h2 {
+    margin: 5rem 0rem;
+  }
+  .form-wrapper span {
+    font-size: 10rem;
+    color: blue;
+  }
+  .form-wrapper label {
+    display: block;
+  }
+  .form-wrapper input {
+    display: block;
+    margin: 3rem 0rem;
+    background: white;
+    color: white;
+    border: none;
+    padding: 1rem;
+  }
+  .form-wrapper button {
+    padding: 1rem 8rem;
+    background: blue;
+    color: white;
+    border: none;
+    width: 100%;
+  }
 
-
+  footer {
+    background: #EFE2BA;
+    color: white;
+    display: flex;
+    padding: 2rem 5%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer h4 {
+    flex: 3 1 40rem;
+    font-size: calc(1.4rem + 1vw);
+  }
+  
+  button:focus {
+    background: #EFE2BA;
+    color: white;
+  }
+  input:focus {
+    border: 4px solid #9494c5;
+  }
+  
 @media screen and (max-width: 932px) {
     html {
         font-size: 45%;
