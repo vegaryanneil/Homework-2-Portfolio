@@ -132,7 +132,7 @@ nav ul {
     width: 100%;
     display: flex;
     position: relative;
-    background: linear-gradient(90deg, #405681 70%, #fffefe 30%);
+    background-color: #405681;
 }
 
 .about-box {
@@ -140,7 +140,7 @@ nav ul {
     position: relative;
     width: 70vh;
     text-transform: uppercase;
-    background-color: white;
+    background-color:#EFE2BA;
     left: 50%;
     top: 10%;
     box-shadow: 0 0 20px;
@@ -153,13 +153,17 @@ nav ul {
     right: 125%;
     font-weight: 700; 
 }
+
+.about-box span{
+    color: #F13C20;
+}
 .about-box h3 {
     padding: 2rem 0 5rem 0;
     font: #050404;
     text-align: center;
     position: relative;
     bottom: 5.9rem;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 
@@ -184,53 +188,96 @@ nav ul {
 #portfolio {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, #fffefe 70%, #F13C20 30%);
+    background: #D79922;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 3rem;
 }
+#portfolio h2 {
+    padding: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#portfolio span{
+    color: #F13C20;
+}
+
+#portfolio img {
+    width: 33%;
+    height: auto;
+    flex-wrap: wrap;
+    padding: 2rem;
+    transition: ease-in-out 1s;
+}
+
+#portfolio img:hover {
+    background-color: rgb(241, 60, 32);
+    font-size: 5rem
+}
+
+/* Contact Page */
 
 #contact {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, #D79922 70%, #fffeff 30%);
+    background-image: url(/images/Copy\ of\ Untitled.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #EFE2BA;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
+.form-wrapper h2 {
+    text-transform: uppercase;
+}
+.form-wrapper span {
+    font-weight: 700;
+    color:#F13C20;
+}
+form {
+    text-transform: uppercase;
 
+}
   .form-wrapper {
-    flex: 3 1 40rem;
-  }
-  .form-wrapper h2 {
-    margin: 5rem 0rem;
-  }
-  .form-wrapper span {
-    font-size: 10rem;
-    color: blue;
-  }
-  .form-wrapper label {
-    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 4rem;
+    
   }
   .form-wrapper input {
-    display: block;
-    margin: 3rem 0rem;
-    background: white;
-    color: white;
-    border: none;
-    padding: 1rem;
-  }
-  .form-wrapper button {
-    padding: 1rem 8rem;
-    background: blue;
-    color: white;
-    border: none;
-    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
   }
 
+  .form-wrapper button {
+    padding: .29rem 4rem;
+    background: #F13C20;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  /* Footer */
+
   footer {
-    background: #EFE2BA;
+    background: #D79922;
     color: white;
     display: flex;
     padding: 2rem 5%;
     align-items: center;
     flex-wrap: wrap;
+    text-transform: uppercase;
   }
   footer ul {
     display: flex;
