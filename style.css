@@ -52,7 +52,6 @@ nav {
     margin: auto;
     align-items: center;
     flex-wrap: wrap;
-    padding: 1rem;
     text-transform: uppercase;
 }
 
@@ -60,7 +59,7 @@ nav ul {
     display: flex;
     flex: 1 1 60rem;
     justify-content: space-around;
-    align-items: right;
+    align-items: center;
     list-style: none;
 }
 
@@ -209,10 +208,10 @@ nav ul {
 #contact {
     height: 100vh;
     width: 100%;
-    background-image: url(/images/Copy\ of\ Untitled.png);
+    background-image: url(images/Copy\ of\ Untitled.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 85%;
+    background-size: 95%;
     background-color: #D79922;
     display: flex;
     justify-content: center;
@@ -222,6 +221,7 @@ nav ul {
 }
 .form-wrapper h2 {
     text-transform: uppercase;
+    text-align: left;
 }
 .form-wrapper span {
     font-weight: 700;
