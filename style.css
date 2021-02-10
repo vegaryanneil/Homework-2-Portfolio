@@ -121,18 +121,16 @@ nav ul {
     background: #D79922;
     color: #050404 ;
 }
-
 .descbutton {
     padding: 2rem;
 }
 /* Second Page */
-
 #about {
     height: 100vh;
     width: 100%;
     display: flex;
     position: relative;
-    background-color: #405681;
+    background-color: #D79922;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -140,7 +138,6 @@ nav ul {
     text-transform: uppercase;
     color: whitesmoke;
 }
-
 .about-box h2 {
     font-weight: 700; 
     font-size: 4rem;
@@ -176,7 +173,7 @@ nav ul {
 #portfolio {
     height: 100vh;
     width: 100%;
-    background: #D79922;
+    background: #EFE2BA;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,10 +210,10 @@ nav ul {
     height: 100vh;
     width: 100%;
     background-image: url(/images/Copy\ of\ Untitled.png);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #EFE2BA;
+    background-size: 85%;
+    background-color: #D79922;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -259,13 +256,14 @@ form {
   /* Footer */
 
   footer {
-    background: #D79922;
-    color: white;
+    background: #EFE2BA;
+    color: #F13C20;
     display: flex;
-    padding: 2rem 5%;
+    padding: 1rem 5%;
     align-items: center;
     flex-wrap: wrap;
     text-transform: uppercase;
+    font-weight: 700;
   }
   footer ul {
     display: flex;
