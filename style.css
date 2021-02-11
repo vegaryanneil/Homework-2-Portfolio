@@ -189,18 +189,22 @@ nav ul {
 #portfolio span{
     color: #F13C20;
 }
-
+#portfolio h3 {
+    display: inline-block;
+    font-size: 2rem;
+    position: relative;
+    top: 60%;
+    right: 20%;
+}
 #portfolio img {
-    width: 33%;
+    width: 25%;
     height: auto;
-    flex-wrap: wrap;
     padding: 2rem;
-    transition: ease-in-out 1s;
+    transition: transform .2s;
 }
 
 #portfolio img:hover {
-    background-color: rgb(241, 60, 32);
-    font-size: 5rem
+    transform: scale(1.5);
 }
 
 /* Contact Page */
@@ -211,7 +215,7 @@ nav ul {
     background-image: url(images/Copy\ of\ Untitled.png);
     background-position: right;
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: 90%;
     background-color: #D79922;
     display: flex;
     justify-content: center;
@@ -267,13 +271,14 @@ form {
   }
   footer ul {
     display: flex;
-    flex: 1 1 40rem;
+    flex: 1 1 10rem;
     justify-content: space-between;
     align-items: center;
+    top: 50%;
+
   }
   footer h4 {
     flex: 3 1 40rem;
-    font-size: calc(1.4rem + 1vw);
   }
   
   
@@ -297,4 +302,27 @@ form {
         margin: auto;
     }
 
+    footer {
+        font-size: 45%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    #portfolio h3 {
+        display:none;
+    }
+
+    #contact {
+        background-size: 100%;
+    }
+    .form-wrapper h2  {
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+    }
+    footer ul{
+        align-content: stretch;
+    }
 }
