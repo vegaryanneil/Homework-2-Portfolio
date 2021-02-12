@@ -10,9 +10,14 @@ The portfolio has 4 main sections
 3. Portfolio
 4. Contact Me
 
+I made a wireframe of the landing in Figma.
+![Wirefame-figma](images/Wireframe.png)
+
 The color scheme was inspired by a color palette found from awwwards.com.
 
 ![color-palette-inspiration](images/loflo.jpg)
+
+
 
 For the Landing page, I felt it was boring so I opted to add animation effects such as the typing effect to add some life into the project. I also added an ease in effect to the button.
 

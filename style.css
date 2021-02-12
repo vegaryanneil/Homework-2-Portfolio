@@ -81,30 +81,29 @@ nav ul {
     text-align: center;
     
 }
-
+/* Typing Animation */
 .hero h2 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #D79922; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    overflow: hidden;
+    border-right: .15em solid #D79922;
+    white-space: nowrap; 
+    margin: 0 auto;
     animation: 
-      typing 4s steps(40, end),
+      typing 4s steps(50, end),
       blink-caret .75s step-end infinite;
   }
   
-  /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 35% }
+    to { width: 40% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #D79922; }
+    40% { border-color: #D79922; }
   }
 
-/* Button and Animated Button */
+/* Call to action Button and Animated Button */
 .cta {
     padding: 2rem 6rem;
     background: #F13C20;
@@ -128,7 +127,6 @@ nav ul {
     height: 100vh;
     width: 100%;
     display: flex;
-    position: relative;
     background-color: #D79922;
     flex-direction: column;
     justify-content: center;
@@ -145,26 +143,23 @@ nav ul {
     color: #F13C20;
 }
 .about-box h3 {
-    padding: 2rem 0 5rem 0;
-    bottom: 5.9rem;
+    padding: 1rem;
     font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 1rem;
+    letter-spacing: .5rem;
     font-size: 3rem;
 }
 
 .about-box p {
-    padding: 2rem;
-    justify-content: left;
+    padding: 1rem;
     text-align: left;
-    position: relative;
 }
 
 .profile-pic {
     height: auto;
     width: 20%;
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* Portfolio Page */
@@ -180,30 +175,51 @@ nav ul {
     text-align: left;
     padding: 3rem;
 }
-#portfolio h2 {
-    padding: 3rem;
+.portfolio h2 {
+    padding: 2rem;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-#portfolio span{
+.portfolio span{
     color: #F13C20;
 }
-#portfolio h3 {
-    display: inline-block;
-    font-size: 2rem;
-    position: relative;
-    top: 60%;
-    right: 20%;
-}
-#portfolio img {
-    width: 25%;
-    height: auto;
-    padding: 2rem;
-    transition: transform .2s;
+.good-meat {
+    text-align: center;
+    justify-content: center;
 }
 
-#portfolio img:hover {
+.good-meat-co {
+    height: auto;
+    width: 50%;
+    text-align: center;
+    transition: transform .3;
+    padding: 1rem;
+}
+
+.portfolio-images {
+    width: 25%;
+    height: auto;
+    padding: .5rem;
+    transition: transform .2s;
+}
+picture {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.portfolio a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #D79922;
+}
+
+.portfolio-images:hover {
+    transform: scale(5);
+}
+
+.good-meat-co:hover {
     transform: scale(1.5);
 }
 
@@ -236,7 +252,6 @@ form {
 
 }
   .form-wrapper {
-    justify-content: center;
     text-align: center;
     padding: 1rem 4rem;
     
@@ -281,7 +296,6 @@ form {
     flex: 3 1 40rem;
   }
   
-  
 @media screen and (max-width: 932px) {
     html {
         font-size: 45%;
@@ -293,28 +307,52 @@ form {
         padding: 1rem;
         text-align: center;
     }
+    .neil {
+        display: none;
+    }
 
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 90% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        90% { border-color: #D79922; }
+      }
     #about {
-        font-size: 45%;
         text-align: center;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
 
-    footer {
-        font-size: 45%;
+    .profile-pic {
+        width: 30vh;
+        height: auto;
+    }
+
+    #portfolio {
+        text-align: center;
+    }
+    .good-meat-co {
+        text-align: center;
+        width: 50vh;
+    }
+    .portfolio-images {
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin: auto;
+        width: 15vh;
+        height: auto;
     }
-    #portfolio h3 {
-        display:none;
+    .portfolio a {
+        color: transparent;
     }
 
     #contact {
-        background-size: 100%;
+        background-size: 68.5vh;
     }
     .form-wrapper h2  {
         justify-content: center;
@@ -322,7 +360,16 @@ form {
         align-content: center;
         margin: auto;
     }
-    footer ul{
-        align-content: stretch;
+    .social-nav {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+    }
+    footer {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 }

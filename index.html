@@ -4,7 +4,7 @@
     <title>Ryan Neil Vega</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ryan Neil Vega is a Full-Stack Web Developer with experience with HTML, CSS, JS, Node.js">
+    <meta name="description" content="Ryan Neil Vega is a Full-Stack Web Developer with experience with HTML, CSS, and JS.">
     <link rel="icon" href="images/favicon-16x16.png">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="reset.css">
@@ -15,7 +15,7 @@
 <body>
     <header class="main-head">
         <nav>
-            <h1 id="logo"><a href="index.html">RYAN NEIL</a></h1>
+            <h1 id="logo"><a href="index.html">RYAN <span class="neil">Neil</span></a></h1>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -26,12 +26,12 @@
     <main class="hero">
         <aside class="hero-box" class="image"></aside>
         <h2>
-            Hey there, I am Ryan Neil
+            Hey there, I am Ryan <span class="neil">Neil</span>
         </h2>
         <h3 class="descbutton">a full stack web developer</h3>
         <a href="form"><button class="cta">SCHEDULE A POWER HOUR</button></a>
     </main>
-    <section id="about">
+    <main id="about">
         <aside class="about-box">
             <h2>Who 
             <span>I am.</span></h2>
@@ -39,24 +39,23 @@
             <img class="profile-pic" src="images/profile.png" alt="Picture of Ryan Vega">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorum. Porro veniam ea odio, voluptatibus, a pariatur, omnis deserunt eum quidem odit eligendi ab voluptatem quasi nam. Consequuntur, quo dolores. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem eos laboriosam ex, consequatur quasi tempora et nemo autem nulla! Autem perferendis architecto inventore maxime eveniet ab vitae obcaecati debitis consequuntur?</p>
         </aside>
-    </section>
-    <section id="portfolio">
+    </main>
+    <main id="portfolio" class="portfolio">
         <h2>What I've
           <span>Created.</span>
         </h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente voluptatum quam quia corrupti similique et sint, tenetur aut culpa maiores repellat recusandae eum officiis saepe consequuntur? Fugiat nobis sunt nesciunt.</p>
         <h4>*Disclaimer - I did not actually create sites - placeholders for homework</h4>
-        <picture>
-          <a href="https://momentossuizos.yorokobu.es/start/"><img src="images/everestwebsite.jpg" alt="Momentos-Urbanos"></a>
-          <h3>Momentos-Urbanos</h3>
-          <a href="https://sanprieto.es/"><img src="images/sanpreito.jpg" alt="Sanpreito"></a>
-          <h3 class="sanpreito">Sanpreito</h3>
-          <a href="https://aqua-has.com/cp/fridge/oishi-rudo/"><img src="images/reito.jpg" alt="Oi-Shi-Reito"></a>
-          <h3 class="reito">Reito</h3>
+        <picture class="good-meat">  
+          <a href="https://goodmeat.co/"><img class="good-meat-co" src="images/goodmeat.jpg" alt="Good-meat-co">Good Meat Co</a>
         </picture>
-    </section>
-        <section id="contact">
-            <div class="form-wrapper">
+        <picture>
+          <a href="https://momentossuizos.yorokobu.es/start/"><img class="portfolio-images" src="images/everestwebsite.jpg" alt="Momentos-Urbanos">Momentos-Urbanos</a>
+          <a href=https://sanprieto.es/"><img class="portfolio-images"  src="images/sanpreito.jpg" alt="Sanpreito">Sanpreito</a>
+          <a href="https://aqua-has.com/cp/fridge/oishi-rudo/"><img class="portfolio-images" src="images/reito.jpg" alt="Oi-Shi-Reito">Reito</a>
+        </picture>
+    </main>
+        <main id="contact">
+            <section class="form-wrapper">
               <h2>
                 Say
                 <span>Hello</span>
@@ -66,23 +65,25 @@
                 <input type="email" id="email" required />
                 <button type="submit">Hello</button>
               </form>
-            </div>
             </section>
+            </main>
             <footer>
                 <h4>Ryan Neil &copy; 2021</h4>
                 <ul>
                   <li>
                     <a href="https://www.instagram.com/vega.ryvn/">
-                      <img src="images/002-instagram-logo.png" alt="Instagram"
+                      <img class="social-nav" src="images/002-instagram-logo.png" alt="Instagram">
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/in/ryan-neil-vega-981553163/"
-                      ><img src="images/003-linkedin.png" alt="LinkedIn"
-                    /></a>
+                    <a href="https://www.linkedin.com/in/ryan-neil-vega-981553163/">
+                      <img class="social-nav" src="images/003-linkedin.png" alt="LinkedIn"/>
+                    </a>
                   </li>
                   <li>
-                    <a href="https://github.com/vegaryanneil"><img src="images/004-github.png" alt="Github"/></a>
+                    <a href="https://github.com/vegaryanneil">
+                      <img class="social-nav" src="images/004-github.png" alt="Github"/>
+                    </a>
                   </li>
                 </ul>
               </footer>
