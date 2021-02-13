@@ -296,7 +296,84 @@ form {
     flex: 3 1 40rem;
   }
   
-@media screen and (max-width: 932px) {
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo {
+        padding: 1rem;
+        text-align: center;
+    }
+    .neil {
+        display: none;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 90% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        90% { border-color: #D79922; }
+      }
+    #about {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .profile-pic {
+        width: 30vh;
+        height: auto;
+    }
+
+    #portfolio {
+        text-align: center;
+    }
+    .good-meat-co {
+        text-align: center;
+        width: 60vh;
+    }
+    .portfolio-images {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 20vh;
+        height: auto;
+    }
+    .portfolio a {
+        color: transparent;
+    }
+
+    #contact {
+        background-size: 68.5vh;
+    }
+    .form-wrapper h2  {
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+    }
+    .social-nav {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        display: inline-block;
+    }
+    footer {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 768px) {
     html {
         font-size: 45%;
     }
