@@ -1,452 +1,477 @@
 /* Color palette #D79922  #EFE2BA #F13C20 #4056A1 #C5CBE3 */
-    /* Global Edits */
+/* Global Edits */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Makes rem = 10px */
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-h1  {
-    font-size: 5rem;
+h1 {
+  font-size: 5rem;
 }
 
-li, button, label, input, p {
-    font-size: 2rem;
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
 }
 h2 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 h3 {
-    font-size: 3rem;
-    font-weight: lighter;
+  font-size: 3rem;
+  font-weight: lighter;
 }
-h4, h5 {
-    font-size: 2rem;
+h4,
+h5 {
+  font-size: 2rem;
 }
 a {
-    color: #000000;
-    text-decoration: none;
-    scroll-behavior: smooth;
+  color: #000000;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /* First Page */
 /* Navigation Bar */
 .main-head {
-    height: 10vh;
-    background: #EFE2BA;
+  height: 10vh;
+  background: #ff4e00;
 }
 
 nav {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    align-items: center;
-    flex-wrap: wrap;
-    text-transform: uppercase;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
 }
 
 nav ul {
-    display: flex;
-    flex: 1 1 60rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+  display: flex;
+  flex: 1 1 60rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
 #logo {
-    flex: 1 1 40rem;
-    font-family: 'Monoton', cursive;
-    letter-spacing: 1rem;
+  flex: 1 1 40rem;
+  font-family: "Monoton", cursive;
+  letter-spacing: 1rem;
 }
 
 /* End of Navigation Bar */
 
 .hero {
-    background: linear-gradient(110deg, #EFE2BA  88%, #D79922 88%);
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
+  background: linear-gradient(110deg, #efe2ba 88%, #d79922 88%);
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 /* Typing Animation */
 .hero h2 {
-    overflow: hidden;
-    border-right: .15em solid #D79922;
-    white-space: nowrap; 
-    margin: 0 auto;
-    animation: 
-      typing 4s steps(50, end),
-      blink-caret .75s step-end infinite;
+  overflow: hidden;
+  border-right: 0.15em solid #d79922;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 40% }
+  to {
+    width: 40%;
   }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    40% { border-color: #D79922; }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  40% {
+    border-color: #d79922;
+  }
+}
 
 /* Call to action Button and Animated Button */
 .cta {
-    padding: 2rem 6rem;
-    background: #F13C20;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 1s ease-in-out;
-    box-shadow: 0px 0px 10px black;
+  padding: 2rem 6rem;
+  background: #f13c20;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background 1s ease-in-out;
+  box-shadow: 0px 0px 10px black;
 }
 
 .cta:hover {
-    background: #D79922;
-    color: #050404 ;
+  background: #d79922;
+  color: #050404;
 }
 .descbutton {
-    padding: 2rem;
+  padding: 2rem;
 }
 /* Second Page */
 #about {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    background-color: #D79922;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: whitesmoke;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  background-color: #d79922;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
 }
 .about-box h2 {
-    font-weight: 700; 
-    font-size: 4rem;
+  font-weight: 700;
+  font-size: 4rem;
 }
-.about-box span{
-    color: #F13C20;
+.about-box span {
+  color: #f13c20;
 }
 .about-box h3 {
-    padding: 1rem;
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: .5rem;
-    font-size: 3rem;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
 }
 
 .about-box p {
-    padding: 1rem;
-    text-align: left;
+  padding: 1rem;
+  text-align: left;
 }
 
 .profile-pic {
-    height: auto;
-    width: 20%;
-    position: relative;
-    padding: 1rem;
+  height: auto;
+  width: 20%;
+  position: relative;
+  padding: 1rem;
 }
 
 /* Portfolio Page */
 
 #portfolio {
-    height: 100vh;
-    width: 100%;
-    background: #EFE2BA;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    padding: 3rem;
+  height: 100vh;
+  width: 100%;
+  background: #efe2ba;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 3rem;
 }
 .portfolio h2 {
-    padding: 2rem;
-    text-transform: uppercase;
-    font-weight: 700;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.portfolio span{
-    color: #F13C20;
+.portfolio span {
+  color: #f13c20;
 }
 .good-meat {
-    text-align: center;
-    justify-content: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .good-meat-co {
-    height: auto;
-    width: 50%;
-    text-align: center;
-    transition: transform .3;
-    padding: 1rem;
+  height: auto;
+  width: 50%;
+  text-align: center;
+  transition: transform 0.3;
+  padding: 1rem;
 }
 
 .portfolio-images {
-    width: 25%;
-    height: auto;
-    padding: .5rem;
-    transition: transform .2s;
+  width: 25%;
+  height: auto;
+  padding: 0.5rem;
+  transition: transform 0.2s;
 }
 picture {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
 }
 .portfolio a {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #D79922;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #d79922;
 }
 
 .portfolio-images:hover {
-    transform: scale(5);
+  transform: scale(5);
 }
 
 .good-meat-co:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 /* Contact Page */
 
 #contact {
-    height: 100vh;
-    width: 100%;
-    background-image: url(images/Copy\ of\ Untitled.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-color: #D79922;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/Copy\ of\ Untitled.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-color: #d79922;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 .form-wrapper h2 {
-    text-transform: uppercase;
-    text-align: left;
+  text-transform: uppercase;
+  text-align: left;
 }
 .form-wrapper span {
-    font-weight: 700;
-    color:#F13C20;
+  font-weight: 700;
+  color: #f13c20;
 }
 form {
-    text-transform: uppercase;
-
+  text-transform: uppercase;
 }
-  .form-wrapper {
-    text-align: center;
-    padding: 1rem 4rem;
-    
+.form-wrapper {
+  text-align: center;
+  padding: 1rem 4rem;
+}
+.form-wrapper input {
+  justify-content: center;
+  text-align: center;
+}
+
+.form-wrapper button {
+  padding: 0.29rem 4rem;
+  background: #f13c20;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+  background: #efe2ba;
+  color: #f13c20;
+  display: flex;
+  padding: 1rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer ul {
+  display: flex;
+  flex: 1 1 10rem;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+}
+footer h4 {
+  flex: 3 1 40rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 80%;
   }
-  .form-wrapper input {
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+    text-align: center;
+  }
+  .neil {
+    display: none;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 90%;
+    }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    90% {
+      border-color: #d79922;
+    }
+  }
+  #about {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .profile-pic {
+    width: 30vh;
+    height: auto;
+  }
+
+  #portfolio {
+    text-align: center;
+  }
+  .good-meat-co {
+    text-align: center;
+    width: 60vh;
+  }
+  .portfolio-images {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20vh;
+    height: auto;
+  }
+  .portfolio a {
+    color: transparent;
+  }
+
+  #contact {
+    background-size: 68.5vh;
+  }
+  .form-wrapper h2 {
     justify-content: center;
     text-align: center;
-    
+    align-content: center;
+    margin: auto;
   }
-
-  .form-wrapper button {
-    padding: .29rem 4rem;
-    background: #F13C20;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    text-transform: uppercase;
+  .social-nav {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
   }
-
-  /* Footer */
-
   footer {
-    background: #EFE2BA;
-    color: #F13C20;
-    display: flex;
-    padding: 1rem 5%;
+    text-align: center;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    text-transform: uppercase;
-    font-weight: 700;
+    margin: auto;
   }
-  footer ul {
-    display: flex;
-    flex: 1 1 10rem;
-    justify-content: space-between;
-    align-items: center;
-    top: 50%;
-
-  }
-  footer h4 {
-    flex: 3 1 40rem;
-  }
-  
-@media screen and (max-width: 1024px) {
-    html {
-        font-size: 80%;
-    }
-    nav{
-        text-align: center;
-    }
-    #logo {
-        padding: 1rem;
-        text-align: center;
-    }
-    .neil {
-        display: none;
-    }
-
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 90% }
-      }
-      
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        90% { border-color: #D79922; }
-      }
-    #about {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
-
-    .profile-pic {
-        width: 30vh;
-        height: auto;
-    }
-
-    #portfolio {
-        text-align: center;
-    }
-    .good-meat-co {
-        text-align: center;
-        width: 60vh;
-    }
-    .portfolio-images {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 20vh;
-        height: auto;
-    }
-    .portfolio a {
-        color: transparent;
-    }
-
-    #contact {
-        background-size: 68.5vh;
-    }
-    .form-wrapper h2  {
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-        margin: auto;
-    }
-    .social-nav {
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        display: inline-block;
-    }
-    footer {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
 }
 @media screen and (max-width: 768px) {
-    html {
-        font-size: 45%;
-    }
-    nav{
-        text-align: center;
-    }
-    #logo {
-        padding: 1rem;
-        text-align: center;
-    }
-    .neil {
-        display: none;
-    }
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+    text-align: center;
+  }
+  .neil {
+    display: none;
+  }
 
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 90% }
-      }
-      
-      /* The typewriter cursor effect */
-      @keyframes blink-caret {
-        from, to { border-color: transparent }
-        90% { border-color: #D79922; }
-      }
-    #about {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+  @keyframes typing {
+    from {
+      width: 0;
     }
+    to {
+      width: 90%;
+    }
+  }
 
-    .profile-pic {
-        width: 30vh;
-        height: auto;
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
     }
+    90% {
+      border-color: #d79922;
+    }
+  }
+  #about {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 
-    #portfolio {
-        text-align: center;
-    }
-    .good-meat-co {
-        text-align: center;
-        width: 50vh;
-    }
-    .portfolio-images {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        width: 15vh;
-        height: auto;
-    }
-    .portfolio a {
-        color: transparent;
-    }
+  .profile-pic {
+    width: 30vh;
+    height: auto;
+  }
 
-    #contact {
-        background-size: 68.5vh;
-    }
-    .form-wrapper h2  {
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-        margin: auto;
-    }
-    .social-nav {
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        display: inline-block;
-    }
-    footer {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-    }
+  #portfolio {
+    text-align: center;
+  }
+  .good-meat-co {
+    text-align: center;
+    width: 50vh;
+  }
+  .portfolio-images {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    height: auto;
+  }
+  .portfolio a {
+    color: transparent;
+  }
+
+  #contact {
+    background-size: 68.5vh;
+  }
+  .form-wrapper h2 {
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    margin: auto;
+  }
+  .social-nav {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+  }
+  footer {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 }
